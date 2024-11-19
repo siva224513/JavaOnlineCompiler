@@ -1,0 +1,160 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 800px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    padding-bottom: 15px;
+}
+
+/* Code Menu */
+.code-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.code-menu span {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
+
+.code-menu button {
+    padding: 10px 10px;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.code-menu button:hover {
+    background-color: #0056b3;
+}
+
+/* Coding Area */
+.codingArea {
+    background-color: #d1cccc;
+    color: #333333;
+    padding: 15px;
+    height: 250px;
+    border-radius: 5px;
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    overflow-y: auto;
+    outline: none;
+    white-space: pre-wrap; /* Keep formatting for code */
+    word-wrap: break-word; /* Prevent overflow of long lines */
+}
+
+/* Output Menu */
+.output-menu {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.output-menu button {
+    padding: 8px 12px;
+    background-color: #FF5722;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.output-menu button:hover {
+    background-color: #E64A19;
+}
+
+/* Output Area */
+.outputArea {
+    background-color: #d8d5d5;
+    color: #333333;
+    padding: 15px;
+    height: 150px;
+    border-radius: 5px;
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    margin-top: 10px;
+    overflow-y: auto;
+    white-space: pre-wrap; /* Maintain formatting for code output */
+}
+
+/* Scrollbar styles for coding and output areas */
+.codingArea::-webkit-scrollbar,
+.outputArea::-webkit-scrollbar {
+    width: 6px;
+}
+
+.codingArea::-webkit-scrollbar-thumb,
+.outputArea::-webkit-scrollbar-thumb {
+    background-color: #cccccc;
+    border-radius: 3px;
+}
+
+.codingArea::-webkit-scrollbar-thumb:hover,
+.outputArea::-webkit-scrollbar-thumb:hover {
+    background-color: #999999;
+}
+
+/* Light and Dark Modes */
+body.dark-mode {
+    background-color: #2d2d2d;
+    color: #ffffff;
+}
+
+body.dark-mode .container {
+    background-color: #3a3a3a;
+}
+
+body.dark-mode .codingArea {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.dark-mode .outputArea {
+    background-color: #1e1e1e;
+    color: #a6e22e;
+}
+
+body.dark-mode .code-menu button {
+    background-color: #0066cc;
+}
+
+body.dark-mode .code-menu button:hover {
+    background-color: #004080;
+}
+
+body.dark-mode .output-menu button {
+    background-color: #cc4444;
+}
+
+body.dark-mode .output-menu button:hover {
+    background-color: #992222;
+}
